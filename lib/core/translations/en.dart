@@ -42,6 +42,16 @@ class En {
         Tk.positionHistory: 'Position',
         Tk.titleDeleteParam: 'Delete @p',
         Tk.contentDeleteParam: 'Are you sure you want to delete @p?',
+        //
+        Tk.titleNotResponse: 'Not Responding',
+        Tk.msgNotResponse: 'Server is not responding',
+        Tk.helpUs: 'How can we help you?',
+        Tk.notAdvisoryContact: 'No advisory contact',
+        Tk.advisory: 'Advisory',
+        Tk.policies: 'Policies',
+        Tk.releaseDevice: 'Release device',
+        Tk.noCachedFiles: 'No cached files',
+        Tk.redirected: 'Redirected',
         // singular
         Tk.item: 'Item',
         Tk.titleMall: 'Shopping Center',

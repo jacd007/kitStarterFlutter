@@ -12,6 +12,7 @@ export 'icon_animated_scale.dart';
 export 'search_custom_app_bar.dart';
 export 'app_bar.dart';
 export 'button_to_start_scroll.dart';
+export 'dial_floating_button.dart';
 export 'animated_iterable_widget.dart';
 
 // =================== ITEMS ===================

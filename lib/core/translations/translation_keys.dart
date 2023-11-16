@@ -98,6 +98,16 @@ class Tk {
   static const String fire = 'fire';
   static const String open = 'open';
   static const String closed = 'closed';
+  //
+  static const String titleNotResponse = 'titleNotResponse';
+  static const String msgNotResponse = 'msgNotResponse';
+  static const String helpUs = 'helpUs';
+  static const String advisory = 'advisory';
+  static const String notAdvisoryContact = 'notContact';
+  static const String policies = 'policies';
+  static const String releaseDevice = 'releaseDevice';
+  static const String noCachedFiles = 'noCachedFiles';
+  static const String redirected = 'Redirected';
 
   // Singular and plural
   static const String item = 'item';

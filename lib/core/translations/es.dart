@@ -42,6 +42,16 @@ class Es {
         Tk.positionHistory: 'Posición',
         Tk.titleDeleteParam: 'Borrar @p',
         Tk.contentDeleteParam: '¿Está seguro que desea borrar @p?',
+        //
+        Tk.titleNotResponse: 'No Responde',
+        Tk.msgNotResponse: 'Servidor no responde',
+        Tk.helpUs: '¿En qué podemos ayudarte?',
+        Tk.notAdvisoryContact: 'No hay contacto de asesoría',
+        Tk.advisory: 'Asesoría',
+        Tk.policies: 'Políticas',
+        Tk.releaseDevice: 'Liberar dispositivo',
+        Tk.noCachedFiles: 'Sin archivos en caché',
+        Tk.redirected: 'Redireccionado',
         // singular
         Tk.item: 'Artículo',
         Tk.titleMall: 'Centro Comercial',

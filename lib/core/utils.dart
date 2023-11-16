@@ -6,6 +6,7 @@ import 'dart:math';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_email_sender/flutter_email_sender.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
 import 'package:image_cropper/image_cropper.dart';
@@ -314,7 +315,7 @@ class Utils {
     return rrr;
   }
 
-  /* static Future<void> sendEmail({
+  static Future<void> sendEmail({
     String subject = '',
     List<String> recipients = const [],
     List<String> cc = const [],
@@ -334,5 +335,5 @@ class Utils {
     );
 
     await FlutterEmailSender.send(email);
-  } */
+  }
 }

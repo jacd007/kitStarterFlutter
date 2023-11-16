@@ -16,6 +16,9 @@ class AllController extends GetxController {
   /// [devices] device identify `mac`.
   String devices = "";
 
+  var contactSupportPhone = "".obs;
+  var contactSupportEmail = "".obs;
+
   @override
   void onInit() {
     debugPrint('statement');
