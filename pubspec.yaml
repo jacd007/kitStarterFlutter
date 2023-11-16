@@ -1,0 +1,73 @@
+name: kit_starter3
+description: A new Flutter project.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.6 <4.0.0'
+
+# Dependencies
+dependencies:
+  animate_do: ^3.0.2
+  awesome_notifications: any
+  awesome_notifications_core: ^0.8.0
+  cached_network_image: ^3.2.3
+  carousel_slider: ^4.2.1
+  country_code_picker: ^3.0.0
+  cupertino_icons: ^1.0.2
+  device_info_plus: ^9.0.2
+  extended_nested_scroll_view: ^6.1.2
+  file_picker: ^5.2.11
+  flutter:
+    sdk: flutter
+  flutter_local_notifications: ^16.1.0
+  flutter_localization: ^0.1.11
+  flutter_staggered_animations: ^1.1.1
+  fluttertoast: ^8.2.1
+  font_awesome_flutter: ^10.4.0
+  get: ^4.6.5
+  http: ^0.13.5
+  image_cropper: ^3.0.3
+  image_picker: ^0.8.7+4
+  intl: ^0.18.0
+  path_provider: ^2.0.15
+  qr_flutter: ^4.0.0
+  rxdart: ^0.27.7
+  sembast: ^3.4.5
+  shared_preferences: ^2.1.1
+  url_launcher: ^6.1.11
+  whatsapp_unilink: ^2.1.0
+# change_app_package_name: ^1.1.0
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/
+    - assets/images/
+    - assets/images/icon.png
+    - assets/images/splash.png
+    - assets/images/icon_trans.png
+    - assets/images/brigades/
+    - assets/icons/
+    - assets/icons/menu1.png
+    - assets/icons/menu2.png
+    - assets/icons/menu3.png
+    - assets/icons/menu4.png
+    - assets/icons/menu5.png
+    - assets/icons/ic_delete.png
+    - assets/icons/ic_cart.png
+    - assets/icons/ic_phone.png
+    - assets/icons/ic_whatsapp.png
+    - assets/icons/ic_world.png
+
+  fonts:
+    - family: CustomIcons
+      fonts:
+        - asset: assets/fonts/CustomIcons.ttf
