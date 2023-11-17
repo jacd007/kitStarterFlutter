@@ -418,13 +418,13 @@ class _ColumnWithSlideAndFade<T> extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AnimationLimiter(
-      child: SingleChildScrollView(
-        controller: controller,
-        physics: physics,
-        reverse: reverse,
-        primary: primary,
-        padding: padding,
+    return SingleChildScrollView(
+      controller: controller,
+      physics: physics,
+      reverse: reverse,
+      primary: primary,
+      padding: padding,
+      child: AnimationLimiter(
         child: Column(
           children: listWidget != null
               ? AnimationConfiguration.toStaggeredList(

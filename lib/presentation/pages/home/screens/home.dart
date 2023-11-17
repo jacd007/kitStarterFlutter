@@ -14,18 +14,20 @@ class HomeScreen extends StatelessWidget {
       return Scaffold(
         body: AnimatedIterableWidgets(
           controller: homeCtr.scrollCtr1,
-          type: StaggeredIterableType.list,
+          type: StaggeredIterableType.column,
           crossAxisCount: 3,
-          animationChild: StaggeredAnimationsType.scale,
-          animationParent: StaggeredAnimationsType.slide,
+          animationChild: StaggeredAnimationsType.slide,
+          animationParent: StaggeredAnimationsType.fadeIn,
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
           mainAxisSpacing: 10.0,
           crossAxisSpacing: 10.0,
           childAspectRatio: 0.33,
-          builder: (index, report) => _ExampleWidget(data: report.data),
-          children: homeCtr.listUndefined,
-          /*  builder: AnimatedIterableWidgets.defaultBuilder,
-          list: List.generate(20, (i) => ListTile(title: Text('data $i'))), */
+          /* builder: (index, report) => _ExampleWidget(data: report.data),
+          children: homeCtr.listUndefined, */
+          builder: AnimatedIterableWidgets.defaultBuilder,
+          children: homeCtr.listUndefined
+              .map((e) => _ExampleWidget(data: e.data))
+              .toList(),
         ),
         floatingActionButtonLocation: miniCenterTop,
         floatingActionButton: ButtonToStartScroll(
