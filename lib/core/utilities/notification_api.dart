@@ -6,8 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 // ignore: depend_on_referenced_packages
 import 'package:rxdart/rxdart.dart';
-import '../core/api_services.dart';
-import '../core/endpoints.dart';
+import 'api_services.dart';
+import '../endpoints.dart';
 
 class NotificationApi {
   static final _notifications = FlutterLocalNotificationsPlugin();

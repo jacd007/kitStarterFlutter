@@ -35,7 +35,7 @@ class CustomAppBar {
               onTap: onBack,
               child: ClipOval(
                 child: Image.asset(
-                  LOGO_TRANS2,
+                  Constants.LOGO_TRANS2,
                   width: sizeIcon,
                   height: sizeIcon,
                 ),

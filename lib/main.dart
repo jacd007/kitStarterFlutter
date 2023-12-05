@@ -38,6 +38,8 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
+    // Creating theme instance For Getting the ThemeMode Stage from the ThemeController
+    final ThemeController themeCtr = Get.put(ThemeController());
     customColors = CustomColors(context);
 
     return GetMaterialApp(
@@ -45,7 +47,7 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       theme: CustomColors.lightTheme,
       darkTheme: CustomColors.darkTheme,
-      themeMode: ThemeMode.system,
+      themeMode: themeCtr.themeStateSettings,
       useInheritedMediaQuery: true,
       initialRoute: Routes.main,
       initialBinding: AuthBinding(),

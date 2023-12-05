@@ -2,7 +2,7 @@
 export 'splash.dart';
 
 // auth
-export 'auth/auth.dart';
+export 'auth/login_page.dart';
 
 // home
 export 'home/home_main.dart';

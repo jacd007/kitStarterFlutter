@@ -32,7 +32,7 @@ class SearchCustomAppBar extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.all(4.0).copyWith(left: 0),
             child: Image.asset(
-              LOGO_ICON2,
+              Constants.LOGO_ICON2,
               width: 40,
               height: 40,
             ),

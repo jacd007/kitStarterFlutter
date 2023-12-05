@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import '../../core/utils_styles.dart';
-
 get onValidatorDefault =>
     (value) => (value?.isEmpty ?? true) ? 'Required' : null;
 
@@ -97,7 +95,8 @@ class _EditTextWidgetState extends State<EditTextWidget> {
                   const EdgeInsets.only(right: 8, top: 8),
               child: Text(
                 ttt,
-                style: widget.titleStyle ?? styleTitlesCard,
+                style: widget.titleStyle ??
+                    const TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
           ),
@@ -121,7 +120,8 @@ class _EditTextWidgetState extends State<EditTextWidget> {
               hintText: widget.hintText,
               counterText: widget.hideCounterText ? "" : null,
               isDense: true,
-              hintStyle: widget.hintStyle ?? style.copyWith(color: Colors.grey),
+              hintStyle:
+                  widget.hintStyle ?? const TextStyle(color: Colors.grey),
               contentPadding: widget.contentPadding ??
                   const EdgeInsets.symmetric(vertical: 2.5),
               suffixIconConstraints: widget.suffixIconConstraints ??

@@ -12,7 +12,7 @@ import 'package:get/get.dart';
 import 'package:image_cropper/image_cropper.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:intl/intl.dart';
-import 'core.dart';
+import '../core.dart';
 
 /// ToastGravity
 /// Used to define the position of the Toast on the screen

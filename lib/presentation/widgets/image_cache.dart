@@ -74,7 +74,7 @@ class ImageCustomCache extends StatelessWidget {
         child: Hero(
           tag: 'tag_$imageUrl',
           child: Image.asset(
-            imgDefault ?? LOGO,
+            imgDefault ?? Constants.LOGO,
             width: size?.width,
             height: size?.height,
             fit: fit,

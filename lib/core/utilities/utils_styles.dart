@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 
-import 'core.dart';
+import '../core.dart';
 
 const fontBold = 'bold';
 const fontLight = 'light';

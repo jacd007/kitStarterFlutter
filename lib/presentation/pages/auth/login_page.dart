@@ -28,7 +28,7 @@ class _LoginPageState extends State<LoginPage> {
                 text: Tk.send.tr,
                 icon: const Icon(Icons.login),
                 stream: auth.loading.stream,
-                // onPressed: () => auth.loginWithUserAndPassword(),
+                onPressed: () => auth.loginWithUserAndPassword(),
               ),
               const SizedBox(height: 30),
               ButtonTextStream(

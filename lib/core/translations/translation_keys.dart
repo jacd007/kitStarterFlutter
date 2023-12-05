@@ -54,6 +54,8 @@ class Tk {
   static const String save = 'save';
   static const String delete = 'delete';
   static const String forget = 'forget';
+  static const String edit = 'edit';
+  static const String notify = 'notify';
   static const String toastTitleExit = 'toastTitleExit';
   static const String toastMsgExit = 'toastMsgExit';
   static const String pageError = 'pageError';

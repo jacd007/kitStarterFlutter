@@ -1,4 +1,7 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 import '../../presentation/presentation.dart';
 import '../../core/core.dart';
@@ -19,10 +22,23 @@ class AllController extends GetxController {
   var contactSupportPhone = "".obs;
   var contactSupportEmail = "".obs;
 
+  // local dateTime
+  late Timer timer;
+  String _timeString = '';
+  String get timeString => _timeString;
+
   @override
   void onInit() {
     debugPrint('statement');
+    _timeString = _formatDateTime(DateTime.now());
+    timer = Timer.periodic(const Duration(seconds: 1), (Timer t) => _getTime());
     super.onInit();
+  }
+
+  @override
+  void dispose() {
+    timer.cancel();
+    super.dispose();
   }
 
   /// [onItemTapped] change the index in the controller to change screen in the
@@ -95,11 +111,11 @@ class AllController extends GetxController {
   ];
 
   final icons = [
-    menu1,
-    menu2,
-    menu3,
-    menu4,
-    LOGO_ICON2,
+    Constants.menu1,
+    Constants.menu2,
+    Constants.menu3,
+    Constants.menu4,
+    Constants.LOGO_ICON2,
     //
     'menuTest',
     'menuTest',
@@ -124,4 +140,18 @@ class AllController extends GetxController {
   Widget get screenChange {
     return screen.elementAt(selectedIndex.value);
   }
+
+  //==================== DATE TIME LOCAL ====================
+  void _getTime({String formate = 'hh:mm:ss a'}) {
+    final DateTime now = DateTime.now();
+    final String formattedTime = _formatDateTime(now, formate);
+
+    _timeString = formattedTime;
+    update();
+  }
+
+  String _formatDateTime(DateTime dateTime, [String formate = 'hh:mm:ss a']) {
+    return DateFormat(formate).format(dateTime);
+  }
+  // =======================================================
 }
