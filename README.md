@@ -8,7 +8,7 @@ This project is a starting point for a Flutter application.
 
 ### Install dependencies: 
 
-animate_do, awesome_notifications, awesome_notifications_core, cached_network_image, carousel_slider, country_code_picker, cupertino_icons, device_info_plus, extended_nested_scroll_view, file_picker, flutter_email_sender, flutter_local_notifications, flutter_localization, flutter_speed_dial, flutter_staggered_animations, fluttertoast, font_awesome_flutter, get, http, image_cropper, image_picker, intl, path_provider, qr_flutter, rxdart, sembast, shared_preferences, url_launcher, whatsapp_unilink
+animate_do, awesome_notifications, awesome_notifications_core, cached_network_image, carousel_slider, country_code_picker, cupertino_icons, device_info_plus, extended_nested_scroll_view, file_picker, flutter_email_sender, flutter_local_notifications, flutter_localization, flutter_speed_dial, flutter_staggered_animations, fluttertoast, font_awesome_flutter, get, http, image_cropper, image_picker, intl, path_provider, qr_flutter, rxdart, sembast, shared_preferences, url_launcher, whatsapp_unilink, mobile_scanner, permission_handler, webview_flutter, loading_animation_widget
 
 A few resources to get you started if this is your first Flutter project:
 
