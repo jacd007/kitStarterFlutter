@@ -1,5 +1,6 @@
 // main
-export 'splash.dart';
+export 'common/splash.dart';
+export 'common/qr_scan_page.dart';
 
 // auth
 export 'auth/login_page.dart';

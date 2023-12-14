@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:loading_animation_widget/loading_animation_widget.dart';
 
-import '../presentation.dart';
+import '../../presentation.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
@@ -20,9 +21,12 @@ class _SplashPageState extends State<SplashPage> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Center(
-        child: CircularProgressIndicator(),
+        child: LoadingAnimationWidget.staggeredDotsWave(
+          color: Theme.of(context).primaryColor,
+          size: 100,
+        ),
       ),
     );
   }

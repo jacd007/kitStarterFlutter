@@ -55,7 +55,7 @@ class AllController extends GetxController {
   }
 
   ///
-  Future<bool> onWillPop() async {
+  Future<bool> onWillPop(_) async {
     if (listViewIndex.length <= 1) return onWillPopExit();
 
     listViewIndex.removeLast();
