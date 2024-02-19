@@ -11,8 +11,7 @@ class HomeMainPage extends StatelessWidget {
     final cc = CustomColors(context, dark: buttonColor3, light: buttonColor);
     int maxRange = 5;
 
-    return PopScope(
-      canPop: false,
+    return exitToApp(
       onPopInvoked: allctr.onWillPop,
       child: Obx(() {
         return Scaffold(

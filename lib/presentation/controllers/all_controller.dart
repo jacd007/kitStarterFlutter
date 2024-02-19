@@ -65,7 +65,7 @@ class AllController extends GetxController {
   }
 
   DateTime? currentBackPressTime;
-  Future<bool> onWillPopExit() {
+  Future<bool> onWillPopExit() async {
     final customColors = CustomColors(Get.context!);
     DateTime now = DateTime.now();
 
@@ -77,7 +77,7 @@ class AllController extends GetxController {
       currentBackPressTime = now;
       customColors.light = grey;
       if (CheckPlatform.isModeMobile) {
-        Utils.toast(
+        await Utils.toast(
           Tk.toastMsgExit.tr,
           toastLength: 1,
         );

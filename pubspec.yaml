@@ -5,44 +5,44 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.0.6 <4.0.0'
+  sdk: '>=3.2.6 <4.0.0'
 
 # Dependencies
 dependencies:
-  animate_do: ^3.0.2
-  awesome_notifications: any
-  awesome_notifications_core: ^0.8.0
-  cached_network_image: ^3.2.3
+  animate_do: ^3.3.3
+  cached_network_image: ^3.3.1
   carousel_slider: ^4.2.1
   country_code_picker: ^3.0.0
-  cupertino_icons: ^1.0.2
-  device_info_plus: ^9.0.2
-  extended_nested_scroll_view: ^6.1.2
-  file_picker: ^5.2.11
+  cupertino_icons: ^1.0.6
+  device_info_plus: ^9.1.2
+  extended_nested_scroll_view: ^6.2.1
+  file_picker: ^6.1.1
   flutter:
     sdk: flutter
   flutter_email_sender: ^6.0.2
-  flutter_local_notifications: ^16.1.0
-  flutter_localization: ^0.1.11
+  flutter_local_notifications: ^16.3.2
+  flutter_localization: ^0.2.0
   flutter_speed_dial: ^7.0.0
   flutter_staggered_animations: ^1.1.1
-  fluttertoast: ^8.2.1
-  font_awesome_flutter: ^10.4.0
-  get: ^4.6.5
-  http: ^0.13.5
-  image_cropper: ^3.0.3
-  image_picker: ^0.8.7+4
+  fluttertoast: ^8.2.4
+  font_awesome_flutter: ^10.7.0
+  get: ^4.6.6
+  http: ^1.2.1
+  image_cropper: ^5.0.1
+  image_picker: ^1.0.7
   intl: ^0.18.0
   loading_animation_widget: ^1.2.0+4
-  mobile_scanner: ^3.5.5
-  path_provider: ^2.0.15
-  qr_flutter: ^4.0.0
+  mobile_scanner: ^4.0.0
+  path_provider: ^2.1.2
+  permission_handler: ^11.3.0
+  qr_flutter: ^4.1.0
   rxdart: ^0.27.7
-  sembast: ^3.4.5
+  sembast: ^3.6.0
   shared_preferences: ^2.2.2
-  url_launcher: ^6.1.11
-  webview_flutter: ^4.4.2
+  url_launcher: ^6.2.4
+  webview_flutter: ^4.7.0
   whatsapp_unilink: ^2.1.0
+
 # change_app_package_name: ^1.1.0
 dev_dependencies:
   flutter_lints: ^2.0.0

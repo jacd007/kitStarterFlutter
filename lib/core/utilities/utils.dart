@@ -85,7 +85,7 @@ class Utils {
   }
 
   /// mensajes personales Movil
-  static toast(String msg,
+  static Future<bool?> toast(String msg,
       {
       ///Toast.LENGTH_SHORT,
       int toastLength = 0,
@@ -93,8 +93,8 @@ class Utils {
       timeInSecForIosWeb = 1,
       backgroundColor = Colors.black54,
       textColor = Colors.white,
-      fontSize = 16.0}) {
-    Fluttertoast.showToast(
+      fontSize = 16.0}) async {
+    return await Fluttertoast.showToast(
       msg: msg,
       toastLength: Toast.values[toastLength],
       gravity: ToastGravity.values[gravity.index],
